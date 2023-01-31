@@ -2,14 +2,14 @@
 
 
 @section('content')
-<div class="row">
+<div class="row ">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
             <h2>Role Management</h2>
         </div>
-        <div class="pull-right">
+        <div class="col-md-3 ms-md-auto ">
         @can('role-create')
-            <a class="btn btn-success" href="{{ route('roles.create') }}"> Create New Role</a>
+            <a class="btn btn-success  me-5" href="{{ route('roles.create') }}"> Create New Role</a>
             @endcan
         </div>
     </div>
@@ -27,7 +27,7 @@
   <tr>
      <th>No</th>
      <th>Name</th>
-     <th width="280px">Action</th>
+     <th width="325px">Action</th>
   </tr>
     @foreach ($roles as $key => $role)
     <tr>
@@ -52,5 +52,4 @@
 {!! $roles->render() !!}
 
 
-<p class="text-center text-primary"><small>Tutorial by <a href="https://github.com/codename-12"> Codename-12</a></small></p>
 @endsection

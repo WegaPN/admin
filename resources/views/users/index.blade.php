@@ -7,7 +7,7 @@
         <div class="pull-left">
             <h2>Users Management</h2>
         </div>
-        <div class="pull-right">
+        <div class="col-md-3 ms-md-auto ">
             <a class="btn btn-success" href="{{ route('users.create') }}"> Create New User</a>
         </div>
     </div>
@@ -55,5 +55,4 @@
 
 {!! $data->render() !!}
 
-<p class="text-center text-primary"><small>Tutorial by <a href="https://github.com/codename-12"> Codename-12</a></small></p>
 @endsection

@@ -66,5 +66,4 @@
 {!! Form::close() !!}
 
 
-<p class="text-center text-primary"><small>Tutorial by <a href="https://github.com/codename-12"> Codename-12</a></small></p>
 @endsection

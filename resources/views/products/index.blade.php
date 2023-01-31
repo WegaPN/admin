@@ -7,8 +7,8 @@
             <div class="pull-left">
                 <h2>Products</h2>
             </div>
-            <div class="pull-right">
-                @can('product-create')
+            <div class="col-md-3 ms-md-auto ">
+                  @can('product-create')
                 <a class="btn btn-success" href="{{ route('products.create') }}"> Create New Product</a>
                 @endcan
             </div>
@@ -58,5 +58,4 @@
     {!! $products->links() !!}
 
 
-    <p class="text-center text-primary"><small>Tutorial by <a href="https://github.com/codename-12"> Codename-12</a></small></p>
 @endsection
